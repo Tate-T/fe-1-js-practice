@@ -98,3 +98,6 @@ ul {
   top: 20px;
   right: 10px;
 }
+.hide{
+  display: none;
+}

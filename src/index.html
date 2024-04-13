@@ -1,63 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <h1 class="fruits__title">Fruits</h1>
-    <ul class="fruits__list"></ul>
 
-    <h1 class="vegetables__title">Vegetables</h1>
-    <ul class="vegetables__list"></ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
 
-    <div class="btns-box">
-      <button type="button" class="add-fruit__btn add-product__btn">
-        Add fruit
-      </button>
-      <button type="button" class="add-vegetable__btn add-product__btn">
-        Add vegetable
-      </button>
-    </div>
+<body>
+  <h1 class="fruits__title">Fruits</h1>
+  <ul class="fruits__list"></ul>
 
-    <!-- todo add fruit modal -->
-    <div class="add-fruit__modal">
-      <form class="add-fruit__form">
-        <input
-          type="text"
-          placeholder="name"
-          class="add-fruit__input fruit-name"
-          name="name"
-        />
-        <input
-          type="text"
-          placeholder="emoji"
-          class="add-fruit__input fruit-emogi"
-          name="emoji"
-        />
-        <input
-          type="text"
-          placeholder="price"
-          class="add-fruit__input fruit-price"
-          name="price"
-        />
-        <input
-          type="text"
-          placeholder="quantity"
-          class="add-fruit__input fruit-quantity"
-          name="quantity"
-        />
-        <button type="submit">Add</button>
-      </form>
-    </div>
+  <h1 class="vegetables__title">Vegetables</h1>
+  <ul class="vegetables__list"></ul>
 
-    <div class="backdrop is-hidden"></div>
-    <!-- ?scripts -->
-    <script type="module" src="./index.js"></script>
+  <div class="btns-box">
+    <button type="button" class="add-fruit__btn add-product__btn">
+      Add fruit
+    </button>
+    <button type="button" class="add-vegetable__btn add-product__btn">
+      Add vegetable
+    </button>
+  </div>
 
-    <!-- <button type="button" class="close-modal__btn">
+  <!-- todo add fruit modal -->
+  <div class="backdrop-add-fruit">
+    <div class="modal-add"></div>
+  </div>
+  <div class="backdrop is-hidden"></div>
+  <!-- ?scripts -->
+  <script type="module" src="./index.js"></script>
+
+  <!-- <button type="button" class="close-modal__btn">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -71,5 +46,6 @@
         <path d="M0 0h24v24H0z" fill="none" />
       </svg>
     </button> -->
-  </body>
+</body>
+
 </html>

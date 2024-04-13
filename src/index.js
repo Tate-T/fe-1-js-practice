@@ -1,7 +1,3 @@
-import { fetchFruits } from "./js/fetchFruitsAPI";
-import { fetchVegetables } from "./js/fetchVegetables";
-import './js/getProducts';
-import './js/openProductDescription';
-
-fetchFruits();
-fetchVegetables();
+import './js/modalInfo/openProductDescription';
+import './js/modalAdd/modalAddFruit' 
+import './js/render'
