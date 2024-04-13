@@ -1,9 +1,8 @@
-import { addFruit } from "../helpersAPI/fetchFruitsAPI";
-import {modalAddSent} from "./submitModalAdd"
-const addFruitFormRef = document.querySelector(".add-fruit__form");
+import { modalAddOpen } from "./modalOpen";
+const addFruitFormRef = document.querySelector(".btns-box__open-add");
 const modalWrap = document.querySelector(".add-fruit__modal")
 const sumbitModalBtn = document.querySelector(".sumbitModalBtn")
 
 // addFruitBtnRef.addEventListener("click", makeMarkUpAddModal)
 
-// addFruitFormRef.addEventListener("submit", modalAddSent)
+addFruitFormRef.addEventListener("click", modalAddOpen)
