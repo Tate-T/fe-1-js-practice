@@ -15,6 +15,15 @@ export const createModalInfo = (objProduct) =>
   </svg>
 </button>
   <h2>${objProduct.name}${objProduct.emoji}</h2>
-  <p>${objProduct.description}</p>
+  <p>${check(objProduct.description)}</p>
   <button class="buy-product__btn">Buy now</button>
   </div>`;
+
+function check(value) {
+  if (value === undefined) {
+    return "Blablabla";
+  }
+  else {
+    return value;
+  }
+}

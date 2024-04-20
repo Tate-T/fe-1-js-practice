@@ -7,6 +7,7 @@ ul {
   align-items: center;
   justify-content: center;
   gap: 40px;
+  flex-wrap: wrap;
 }
 
 .vegetables__list {
@@ -36,26 +37,28 @@ ul {
 
 .btns-box__open-add {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   padding: 8px;
-  border-radius: 15px;
   width: auto;
 }
 
 .btns-box {
   display: flex;
+  flex-direction: row;
+  gap: 10px;
+  
+  margin-left: calc(50% - 225px);
   /* gap: 20px; */
 }
 
-.add-fruit__modal {
+.add-fruit__form {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding: 40px;
 }
 
 .add-fruit__input {
-  width: 200px;
+  width: auto;
 }
 
 .backdrop {
@@ -67,7 +70,7 @@ ul {
   right: 0;
   left: 0;
   bottom: 0;
-  /* background-color: aliceblue; */
+  background-color: rgba(0, 0, 0, 0.35);
 }
 
 .is-hidden {
@@ -100,4 +103,14 @@ ul {
 }
 .hide{
   display: none;
+}
+
+.modal-add {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 600px;
+  background-color: white;
 }
