@@ -1,5 +1,5 @@
 export const makeMarkUpAddModal = () => {
-    const formElement = `<form class="add-fruit__form">
+  const formElement = `<form class="add-fruit__form">
     <input
       type="text"
       placeholder="name"
@@ -25,6 +25,6 @@ export const makeMarkUpAddModal = () => {
       name="quantity"
     />
     <button type="submit" class="sumbitModalBtn">Add</button>
-  </form>`
-    return formElement
-}
+  </form>`;
+  return formElement;
+};
